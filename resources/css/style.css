@@ -46,22 +46,14 @@ table {
 
 /* Styling */
 
-.image-container {
-	overflow: hidden;
-  }
-  
-.image-container img {
-	display: block;
-	max-width: 100%;
-}
-
-  /* Header */
+/* Header */
 
 header {
     position: fixed;
     z-index: 100;
 	width: 100%;
-	background-color: red;
+	background-color: white;
+	height: 64px;
 }
 
 header .content {
@@ -94,6 +86,8 @@ header .icon {
 	width: 1rem;
 	padding-left: .75rem;
   }
+
+/* Desktop */
 
 header .mobile {
 	display: none;
