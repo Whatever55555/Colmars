@@ -46,6 +46,11 @@ table {
 
 /* Styling */
 
+html {
+	font-size: 16px;
+	font-family: "Open Sans";
+}
+
 /* Header */
 
 header {
@@ -53,29 +58,36 @@ header {
     z-index: 100;
 	width: 100%;
 	background-color: white;
-	height: 64px;
 }
 
 header .content {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	padding: 1.875rem;
+	padding: 1rem 1.5rem;
+	height: 2rem;
 }
 
-header .logo {
-	flex: 1;
+#header-logo {
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(43, 43, 43);
+	font-size: 1.25rem;
+
 }
 
 header nav ul {
 	display: flex;
+	
 }
 
 nav li {
-	padding-left: 3.5rem;
+	padding: 0.5rem;
 }
  
 nav a {
-	vertical-align: bottom;
 	line-height: 1.6;
 	font-size: 1rem;
 	text-decoration: none;
@@ -92,3 +104,53 @@ header .icon {
 header .mobile {
 	display: none;
   }
+
+/* Mobile - to be done */
+
+#main-content {
+	position: relative;
+	top: 4rem;
+}
+
+/* Learn something new */
+
+#learn-something-new {
+	display: flex;
+	width: 100%;
+	padding: 2rem 1.5rem;
+	background-color: lightgray;
+	justify-content: space-between;
+}
+
+#photo-container {
+	display: flex;
+	width: 60%;
+	height: auto;
+	padding-right: 1.5rem;
+}
+
+#people-studying {
+	max-width: 100%;
+}
+
+#text1 {
+	display: flex;
+	width: 40%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	padding-bottom: 1.5rem;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: 500;
+	padding-bottom: 1.5rem;
+}
+#text1 span {
+	border: 0.5rem solid red;
+}
