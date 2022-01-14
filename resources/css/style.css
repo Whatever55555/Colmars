@@ -49,6 +49,23 @@ table {
 html {
 	font-size: 16px;
 	font-family: "Open Sans";
+	color: rgb(61, 61, 61);
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	padding-bottom: 1.5rem;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: 500;
+	padding-bottom: 1.5rem;
+}
+
+p {
+	font-size: 1.3rem;
 }
 
 /* Header */
@@ -122,7 +139,7 @@ header .mobile {
 	justify-content: space-between;
 }
 
-#photo-container {
+#photo-container1 {
 	display: flex;
 	width: 60%;
 	height: auto;
@@ -140,17 +157,91 @@ header .mobile {
 	justify-content: center;
 }
 
-h1 {
-	font-size: 3rem;
-	font-weight: 900;
+#text1 span {
+	background-color: rgb(61, 61, 61);
+	padding: 0.5rem 0;
+	color: white;
+	text-align: center;
+}
+
+/* Keep practicing */
+
+#keep-practicing {
+	display: flex;
+}
+
+#photo-container2 {
+	display: flex;
+	padding: 2rem 1.5rem;
+	width: 60%;
+	height: auto;
+	flex-direction: column;
+	padding-bottom: 2rem;
+}
+
+#keep-practicing-background {
+	padding-bottom: 2rem;
+}
+
+#keep-practicing-headline {
 	padding-bottom: 1.5rem;
 }
 
-h3 {
-	font-size: 2rem;
-	font-weight: 500;
-	padding-bottom: 1.5rem;
+#emanuel {
+	padding-top: 2rem;
+	font-weight: 700;
 }
-#text1 span {
-	border: 0.5rem solid red;
+
+#orientation-date {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 0;
+	width: 40%;
+}
+
+.right-handside-photos {
+	display: flex;
+}
+
+.right-handside-photos img {
+	width: 35%;
+	height: auto;
+	padding: 1rem;
+	border-left: solid 1px lightgray;
+}
+
+#last-information {
+	background-color: lightgray
+}
+
+.text-practicing {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 65%;
+	border-bottom: solid 1px lightgray;
+}
+
+.text-practicing p {
+	font-size: 1.1rem;
+	padding-right: 1rem;
+}
+
+.read-more {
+	padding-top: 1rem;
+	color: rgb(0, 119, 255);
+}
+
+/* Start learning */
+
+#start-learning {
+	background-color: lightgray;
+	display: flex;
+	width: 100%;
+	padding: 2rem 4rem;
+	justify-content: center;
+}
+
+.grid {
+	width: 1/3;
 }
