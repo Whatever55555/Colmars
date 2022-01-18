@@ -77,6 +77,8 @@ header {
 	background-color: white;
 }
 
+/* Desktop */
+
 header .content {
 	display: flex;
 	justify-content: space-between;
@@ -85,7 +87,7 @@ header .content {
 	height: 2rem;
 }
 
-#header-logo {
+.header-logo {
 	height: 2rem;
 	display: flex;
 	align-items: center;
@@ -114,13 +116,51 @@ header .icon {
 	padding-left: .75rem;
   }
 
-/* Desktop */
-
 header .mobile {
 	display: none;
   }
 
-/* Mobile - to be done */
+/* Mobile - */
+
+@media only screen and (max-width: 480px) {
+	header {
+		width: 100%;
+		height: 4rem;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header nav {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header ul {
+		justify-content: space-evenly;
+		width: 100%;
+		align-items: center;
+	}
+	
+	header nav li {
+		padding: 0;
+	}
+
+	header a {
+		font-size: 100%;
+		line-height: 1;
+	}
+
+	header .desktop {
+		display: none;
+	}
+
+	header .mobile {
+		display: flex;
+	}
+}
 
 #main-content {
 	position: relative;
@@ -129,6 +169,8 @@ header .mobile {
 }
 
 /* Learn something new */
+
+/* Desktop */
 
 #learn-something-new {
 	display: flex;
@@ -163,14 +205,48 @@ header .mobile {
 	text-align: center;
 }
 
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+	#learn-something-new {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+	}
+
+	#photo-container1 {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	#text1 {
+		width: 100%;
+		padding-bottom: 2rem;
+		margin: 0;
+	}
+
+	.mobile1 h1 {
+		padding: 2rem 1rem;
+	}
+
+	.mobile1 h3 {
+		padding: 0 1rem 1.5rem 1rem;
+	}
+
+}
+
 /* Keep practicing */
+
+/* Desktop */
 
 #keep-practicing {
 	display: flex;
 	width: 100%;
 }
 
-#photo-container2 {
+.photo-container2 {
 	display: flex;
 	padding: 2rem 1.5rem;
 	width: 60%;
@@ -179,15 +255,15 @@ header .mobile {
 	padding-bottom: 2rem;
 }
 
-#keep-practicing-background {
+.keep-practicing-background {
 	padding-bottom: 2rem;
 }
 
-#keep-practicing-headline {
+.keep-practicing-headline {
 	padding-bottom: 1.5rem;
 }
 
-#emanuel {
+.emanuel {
 	padding-top: 2rem;
 	font-weight: 700;
 }
@@ -232,7 +308,48 @@ header .mobile {
 	color: rgb(0, 119, 255);
 }
 
+.mobile {
+	display: none;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: inline;
+	}
+
+	.right-handside-photos {
+		flex-direction: column;
+		padding: 0 1rem 1rem 1rem;
+	}
+
+	.text-practicing {
+		padding: 1rem;
+		border: none;
+		width: 100%;
+	}
+
+	.right-handside-photos img {
+		width: 100%;
+		height: auto;
+		padding: 0;
+		margin: 0;
+	}
+
+	#last-information {
+		background-color: inherit;
+	}
+}
+
+
 /* Start learning */
+
+/* Desktop */
 
 #start-learning {
 	background-color: rgb(243, 243, 243);
@@ -244,7 +361,7 @@ header .mobile {
 	text-align: center;
 }
 
-#grid-container {
+.grid-container {
 	display: flex;
 	width: 100%;
 	height: auto;
@@ -283,7 +400,46 @@ header .mobile {
 	padding-bottom: 0.5rem;
 }
 
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#start-learning{
+		background-color: inherit;
+		border-top: solid 1px rgb(243, 243, 243);
+		width: 100%;
+		padding: 0;
+		padding-top: 2rem;
+	}
+
+	.start-learning-blocks {
+		padding: 1rem;
+	}
+
+	.h2-blocks {
+		display: flex;
+		width: auto;
+		padding: 1rem;
+		margin-bottom: 0.5rem;
+		align-items: center;
+		justify-content: left;
+		background-color: lightgray;
+		font-weight: 700;
+		font-size: 1.5rem;
+	}
+}
+
 /* Thesis exhibit */ 
+
+/* Desktop */
 
 #thesis-exhibit {
 	background-color: rgb(255, 255, 255);
@@ -295,14 +451,14 @@ header .mobile {
 	text-align: center;
 }
 
-#last-content-container {
+.last-content-container {
 	display: flex;
 	flex-direction: row;
 	width: auto;
 	padding-top: 2rem;
 }
 
-#video-container {
+.video-container {
 	display: flex;
 	flex-direction: column;
 	text-align: left;
@@ -316,12 +472,12 @@ video {
 	height: auto;
 }
 
-#last-header {
+.last-header {
 	padding-top: 1.5rem;
 	padding-bottom: 0.5rem;
 }
 
-#text-under-video {
+.text-under-video {
 	padding-bottom: 2rem;
 }
 
@@ -364,7 +520,32 @@ video {
 	font-size: 1rem;
 }
 
+.mobile {
+	display: none;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: flex;
+	}
+
+	#thesis-exhibit {
+		padding: 0;
+		padding-top: 2rem;
+		border-top: solid 1px rgb(243, 243, 243);
+		margin-bottom: 1.5rem;
+	}
+}
+
 /* Footer */
+
+/* Desktop */
 
 footer {
 	width: 97%;
@@ -388,4 +569,26 @@ footer ul {
 footer li {
 	padding-left: 0.5rem;
 	font-size: 0.9rem;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: flex;
+	}
+
+	footer {
+		width: 100%;
+		display: flex;
+		border: none;
+		padding: 1rem;
+		z-index: 100;
+		position: absolute;
+		margin-top: 4rem;
+	}
 }
